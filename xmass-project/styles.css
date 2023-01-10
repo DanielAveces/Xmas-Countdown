@@ -1,9 +1,20 @@
 body {
-    background-color: #1e293b;
+    background-color: #530606;
     color: #e2e8f0;
     text-align: center;
+    font-size: 5rem;
+    font-family: 'Mountains of Christmas';
 }
 
 .timeStamp {
     color: #f1f5f9;
+    margin-top: 1rem;
+    padding-top: 1rem;
 }
+
+.backgroundImage {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
