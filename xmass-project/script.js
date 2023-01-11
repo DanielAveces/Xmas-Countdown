@@ -1,4 +1,6 @@
 
+//time
+
 var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
 
 // Run myfunc every second
@@ -28,7 +30,25 @@ var now = new Date().getTime();
         document.getElementById("secs").innerHTML = ""
         document.getElementById("end").innerHTML = "TIME UP!!";
     }
+
+    function createSnowFlake() {
+        let snow_flake = document.createElement("i");
+        snow_flake.classList.add("fa-solid");
+        snow_flake.classList.add("fa-snowflake");
+        snow_flake.classList.add("fa-xs");
+        snow_flake.style.left = Math.random() * window.innerWidth + "px";
+        snow_flake.style.animationDuration = Math.random() * 3 + 2 + "s";
+        snow_flake.style.opacity = Math.random();
+        snow_flake.style.fontSize = Math.random() * 10 + 10 + "px";
+
+        document.body.appendChild(snow_flake);
+    }
+    createSnowFlake();
+    createSnowFlake();
+    createSnowFlake();
 }, 1000);
 
 myfunc();
+
+
 
